@@ -1,0 +1,7 @@
+
+State Machine - |stream_arbiter|state
+Name state.FRBCAST state.RRBCAST state.BCAST state.IDLE 
+state.IDLE 0 0 0 0 
+state.BCAST 0 0 1 1 
+state.RRBCAST 0 1 0 1 
+state.FRBCAST 1 0 0 1 

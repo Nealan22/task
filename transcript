@@ -1,0 +1,66 @@
+# do stream_arbiter_run_simulation.do
+# 
+# vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# vlog -sv +incdir+./ ./stream_arbiter_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:55:29 on Nov 19,2023
+# vlog -reportprogress 300 -sv "+incdir+./" ./stream_arbiter_tb.sv 
+# -- Compiling module stream_arbiter_tb
+# 
+# Top level modules:
+# 	stream_arbiter_tb
+# End time: 17:55:29 on Nov 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv +incdir+./ ./stream_arbiter.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:55:29 on Nov 19,2023
+# vlog -reportprogress 300 -sv "+incdir+./" ./stream_arbiter.sv 
+# -- Compiling module stream_arbiter
+# ** Warning: ./stream_arbiter.sv(10): (vlog-13314) Defaulting port 's_data_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ./stream_arbiter.sv(11): (vlog-13314) Defaulting port 's_qos_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# -- Compiling module prior
+# ** Warning: ./stream_arbiter.sv(184): (vlog-13314) Defaulting port 's_qos_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	stream_arbiter
+# End time: 17:55:29 on Nov 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# 
+# vsim -t 1ns -voptargs="+acc" stream_arbiter_tb
+# vsim -t 1ns -voptargs=""+acc"" stream_arbiter_tb 
+# Start time: 17:55:29 on Nov 19,2023
+# Loading sv_std.std
+# Loading work.stream_arbiter_tb
+# Loading work.stream_arbiter
+# Loading work.prior
+# 
+# add wave stream_arbiter_tb/clk
+# add wave stream_arbiter_tb/rst_n
+# add wave stream_arbiter_tb/s_valid_i
+# add wave stream_arbiter_tb/s_ready_o
+# add wave stream_arbiter_tb/s_last_i
+# add wave -radix hexadecimal stream_arbiter_tb/s_qos_i
+# add wave -radix hexadecimal stream_arbiter_tb/s_data_i
+# add wave stream_arbiter_tb/m_valid_o
+# add wave stream_arbiter_tb/m_ready_i
+# add wave stream_arbiter_tb/m_last_o
+# add wave stream_arbiter_tb/m_id_o
+# add wave -radix hexadecimal stream_arbiter_tb/m_qos_o
+# add wave -radix hexadecimal stream_arbiter_tb/m_data_o
+# add wave -radix hexadecimal stream_arbiter_tb/i_stream_arbiter/state
+# add wave -radix hexadecimal stream_arbiter_tb/i_stream_arbiter/qos_i
+# add wave -radix hexadecimal stream_arbiter_tb/i_stream_arbiter/qos_i_d
+# 
+# configure wave -timelineunits us
+# 
+# run -all
+# ** Note: $finish    : ./stream_arbiter_tb.sv(65)
+#    Time: 4970 ns  Iteration: 0  Instance: /stream_arbiter_tb
+# 1
+# Break in Module stream_arbiter_tb at ./stream_arbiter_tb.sv line 65
+# 
+# wave zoom full
+# 0 ns
+# 5219 ns
