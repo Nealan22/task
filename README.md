@@ -63,6 +63,6 @@
 
   Для запуска синтеза необходимо открыть проект stream_arbiter.qpf в quartus, а затем запустить Compile design в окне Task.  
   Синтез проводился для fpga EP4CE6E22C7.  
-  Все необходимые отчеты находятся в [директории output_files][https://github.com/Nealan22/task/tree/master/output_files].  
+  Все необходимые отчеты находятся в [директории output_files](https://github.com/Nealan22/task/tree/master/output_files).  
 
   Оптимизация комбинационной логики, а именно уменьшение количества логических элементов модуля prior, позволит увеличить рабочую частоту арбитра.
